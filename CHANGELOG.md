@@ -1,5 +1,44 @@
 # Changelog
 
+## [7.0.0](https://github.com/nvim-neorg/neorg/compare/v6.2.0...v7.0.0) (2023-12-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **selection_popup:** modernize code of selection popup
+
+### ref
+
+* **selection_popup:** modernize code of selection popup ([310f3a4](https://github.com/nvim-neorg/neorg/commit/310f3a484d3d98b0d05650a38407dcaa7f090b96))
+
+
+### Features
+
+* **concealer:** add config for concealing numeric footnote title to superscript ([2a6fc9c](https://github.com/nvim-neorg/neorg/commit/2a6fc9c808f6d643bf7c2f911a767e4aac500560))
+* **concealer:** add configuration for hrule start and end position ([3db316a](https://github.com/nvim-neorg/neorg/commit/3db316a33838eb0875eacd659af9d49bbd4aef39))
+* **keyinds:** add keybind for entering link traversal mode ([#1177](https://github.com/nvim-neorg/neorg/issues/1177)) ([8cf5205](https://github.com/nvim-neorg/neorg/commit/8cf52058fb7e9c3057882430ade90be5bdfb3a94))
+* **selection_popup:** allow keybinds to be processed from another buffer ([603b633](https://github.com/nvim-neorg/neorg/commit/603b633b8df231fe37a338856b1dea7cd955a969))
+* **toc:** add config for enabling synchronized cursorline in toc window ([d3cbb45](https://github.com/nvim-neorg/neorg/commit/d3cbb45b66c865b1b92b5f8b2dbd5a5fff7f1a2f))
+* **toc:** add toc item filter ([#1195](https://github.com/nvim-neorg/neorg/issues/1195)) ([5c42084](https://github.com/nvim-neorg/neorg/commit/5c420844227c75390cc9fdf6047bfc49466169d9))
+* **toc:** auto adjust toc vsplit width upon creation ([81f6330](https://github.com/nvim-neorg/neorg/commit/81f6330af951e89f98e8468d23a648fc32acdd2f))
+* **toc:** sync cursor from ToC to content buffer ([47e7c86](https://github.com/nvim-neorg/neorg/commit/47e7c86877aaae4d85c1a2add166ad6c15b8add4))
+
+
+### Bug Fixes
+
+* **concealer:** BufNewFile-&gt;FileType, get winid of bufid when rendering ([c0983ca](https://github.com/nvim-neorg/neorg/commit/c0983ca60f02e1a65e5990593726e57678e03c4a))
+* **concealer:** do not render on range change if concealer is disabled ([9b0c31a](https://github.com/nvim-neorg/neorg/commit/9b0c31a5179f3881f9ff2350da22c9a5a11f32ab))
+* **config:** delete `neovim_version` as it is no longer in use ([00f9a62](https://github.com/nvim-neorg/neorg/commit/00f9a628683b7b3f738e1d1d1a79d517c26b6ff5))
+* **config:** fix luajit version detection ([237abac](https://github.com/nvim-neorg/neorg/commit/237abac43a38e4aa770bb5819f30b3d38ae5f392))
+* **journal:** value assigned to variable current_quarter is unused ([0e88151](https://github.com/nvim-neorg/neorg/commit/0e8815116b08bfbceb2b36a8c82d81005e2596e0))
+* **latex:** Want image integration ([a80c025](https://github.com/nvim-neorg/neorg/commit/a80c025b231a6acd925d625d6d9ea302bc20bd49))
+* **luacheck:** setting non-standard global variables in latex renderer module ([#1176](https://github.com/nvim-neorg/neorg/issues/1176)) ([3f4b279](https://github.com/nvim-neorg/neorg/commit/3f4b279d7505ac854fcd31d1aad24991542ea5d8))
+* **modules:** Check the right config key in module.wants ([8b25435](https://github.com/nvim-neorg/neorg/commit/8b25435e8bc60f9e6f665b3a28870d64d20f2b59))
+* **toc:** clear title after assigning prefix ([f446645](https://github.com/nvim-neorg/neorg/commit/f4466457396717d10d2d235d019e0a80e1770087))
+* **toc:** listen cursormoved for all norg files ([19bff13](https://github.com/nvim-neorg/neorg/commit/19bff133659c16973e52546f54a13469bfecb1b6))
+* **toc:** stop synching cursor when content window is hidden ([15ed981](https://github.com/nvim-neorg/neorg/commit/15ed981858658796b698f6fc204f1378eef4b01d))
+* **typecheck:** fix type errors caused by autoformat ([3f531c3](https://github.com/nvim-neorg/neorg/commit/3f531c362d07d52c4956520e3798e9cfb5aeabdf))
+
 ## [6.2.0](https://github.com/nvim-neorg/neorg/compare/v6.1.0...v6.2.0) (2023-11-18)
 
 
